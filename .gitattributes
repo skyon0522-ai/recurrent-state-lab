@@ -1,0 +1,3 @@
+# Preserve pinned upstream bytes used by the SHA-256 provenance checks.
+src/recurrent_state_lab/_vendor/**/*.py -text
+src/recurrent_state_lab/_vendor/**/LICENSE* -text
