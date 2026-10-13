@@ -1,0 +1,1221 @@
+{
+  "schema_version": 1,
+  "protocol": {
+    "seeds": [
+      7,
+      19
+    ],
+    "loops": [
+      1,
+      2
+    ],
+    "epochs": 12,
+    "train_examples": 1024,
+    "validation_examples": 128,
+    "test_examples": 256,
+    "train_length": 16,
+    "test_lengths": [
+      16,
+      32,
+      64
+    ],
+    "pairs": 2,
+    "batch_size": 32,
+    "learning_rate": 0.003,
+    "threads": 2,
+    "repetitions": 3
+  },
+  "runs": [
+    {
+      "seed": 7,
+      "loops": 1,
+      "training": {
+        "initial_parameter_sha256": "b928c7edfb16c4c20220b2736f6cf16f5ee7546523bf199e0a7998e1f662cda2",
+        "final_parameter_sha256": "6d547256e7dab955d8c18bb8462f7affb7eb3108cc3031604d07fce43edcdb1d",
+        "unique_parameters": 28292,
+        "optimizer_steps": 384,
+        "train_seconds": 29.79528510000091,
+        "curve": [
+          {
+            "epoch": 1,
+            "loss": 4.624382510781288,
+            "last_batch_pre_clip_gradient_norm": 1.0549449920654297,
+            "validation": {
+              "correct": 5,
+              "queries": 256,
+              "accuracy": 0.01953125
+            }
+          },
+          {
+            "epoch": 2,
+            "loss": 4.141629710793495,
+            "last_batch_pre_clip_gradient_norm": 1.8973442316055298,
+            "validation": {
+              "correct": 12,
+              "queries": 256,
+              "accuracy": 0.046875
+            }
+          },
+          {
+            "epoch": 3,
+            "loss": 3.778788760304451,
+            "last_batch_pre_clip_gradient_norm": 1.9098728895187378,
+            "validation": {
+              "correct": 17,
+              "queries": 256,
+              "accuracy": 0.06640625
+            }
+          },
+          {
+            "epoch": 4,
+            "loss": 3.3499194905161858,
+            "last_batch_pre_clip_gradient_norm": 2.7915725708007812,
+            "validation": {
+              "correct": 42,
+              "queries": 256,
+              "accuracy": 0.1640625
+            }
+          },
+          {
+            "epoch": 5,
+            "loss": 2.731056720018387,
+            "last_batch_pre_clip_gradient_norm": 3.5887019634246826,
+            "validation": {
+              "correct": 64,
+              "queries": 256,
+              "accuracy": 0.25
+            }
+          },
+          {
+            "epoch": 6,
+            "loss": 2.1314753964543343,
+            "last_batch_pre_clip_gradient_norm": 2.923835515975952,
+            "validation": {
+              "correct": 91,
+              "queries": 256,
+              "accuracy": 0.35546875
+            }
+          },
+          {
+            "epoch": 7,
+            "loss": 1.577148076146841,
+            "last_batch_pre_clip_gradient_norm": 2.7715518474578857,
+            "validation": {
+              "correct": 121,
+              "queries": 256,
+              "accuracy": 0.47265625
+            }
+          },
+          {
+            "epoch": 8,
+            "loss": 1.1089156325906515,
+            "last_batch_pre_clip_gradient_norm": 3.522658586502075,
+            "validation": {
+              "correct": 144,
+              "queries": 256,
+              "accuracy": 0.5625
+            }
+          },
+          {
+            "epoch": 9,
+            "loss": 0.7450938802212477,
+            "last_batch_pre_clip_gradient_norm": 3.8024239540100098,
+            "validation": {
+              "correct": 178,
+              "queries": 256,
+              "accuracy": 0.6953125
+            }
+          },
+          {
+            "epoch": 10,
+            "loss": 0.45804235618561506,
+            "last_batch_pre_clip_gradient_norm": 2.568359136581421,
+            "validation": {
+              "correct": 194,
+              "queries": 256,
+              "accuracy": 0.7578125
+            }
+          },
+          {
+            "epoch": 11,
+            "loss": 0.2663875515572727,
+            "last_batch_pre_clip_gradient_norm": 1.647204875946045,
+            "validation": {
+              "correct": 215,
+              "queries": 256,
+              "accuracy": 0.83984375
+            }
+          },
+          {
+            "epoch": 12,
+            "loss": 0.14554134686477482,
+            "last_batch_pre_clip_gradient_norm": 0.98860764503479,
+            "validation": {
+              "correct": 226,
+              "queries": 256,
+              "accuracy": 0.8828125
+            }
+          }
+        ],
+        "checkpoint_selection": "Fixed final epoch; validation is recorded but never selects an epoch/configuration."
+      },
+      "evaluations": [
+        {
+          "length": 16,
+          "quality": {
+            "correct": 434,
+            "queries": 512,
+            "accuracy": 0.84765625
+          },
+          "constant_value64_baseline": {
+            "correct": 5,
+            "queries": 512,
+            "accuracy": 0.009765625
+          },
+          "controls": {
+            "full_vs_stream_max_abs": 3.814697265625e-06,
+            "split_max_abs": 3.814697265625e-06,
+            "step_max_abs": 4.291534423828125e-06,
+            "reset_exact": true,
+            "batch_reorder_isolated": true,
+            "returned_state_bytes": 9216,
+            "state_offsets": [
+              16
+            ]
+          },
+          "timing": [
+            {
+              "repetition": 1,
+              "prefill_ms": 2.2299999836832285,
+              "supplied_one_token_ms": 1.2048749995301478,
+              "state_bytes": 4608,
+              "rss_before_bytes": 304189440,
+              "rss_after_bytes": 304291840
+            },
+            {
+              "repetition": 2,
+              "prefill_ms": 2.279300009831786,
+              "supplied_one_token_ms": 1.1941750017285813,
+              "state_bytes": 4608,
+              "rss_before_bytes": 304295936,
+              "rss_after_bytes": 304295936
+            },
+            {
+              "repetition": 3,
+              "prefill_ms": 2.202000003308058,
+              "supplied_one_token_ms": 1.3008062487642746,
+              "state_bytes": 4608,
+              "rss_before_bytes": 304295936,
+              "rss_after_bytes": 304295936
+            }
+          ]
+        },
+        {
+          "length": 32,
+          "quality": {
+            "correct": 441,
+            "queries": 512,
+            "accuracy": 0.861328125
+          },
+          "constant_value64_baseline": {
+            "correct": 7,
+            "queries": 512,
+            "accuracy": 0.013671875
+          },
+          "controls": {
+            "full_vs_stream_max_abs": 3.0994415283203125e-06,
+            "split_max_abs": 3.814697265625e-06,
+            "step_max_abs": 4.0531158447265625e-06,
+            "reset_exact": true,
+            "batch_reorder_isolated": true,
+            "returned_state_bytes": 9216,
+            "state_offsets": [
+              32
+            ]
+          },
+          "timing": [
+            {
+              "repetition": 1,
+              "prefill_ms": 3.190400020685047,
+              "supplied_one_token_ms": 1.1771812496590428,
+              "state_bytes": 4608,
+              "rss_before_bytes": 322260992,
+              "rss_after_bytes": 322260992
+            },
+            {
+              "repetition": 2,
+              "prefill_ms": 4.369799979031086,
+              "supplied_one_token_ms": 1.0831562503881287,
+              "state_bytes": 4608,
+              "rss_before_bytes": 322260992,
+              "rss_after_bytes": 305156096
+            },
+            {
+              "repetition": 3,
+              "prefill_ms": 3.145099966786802,
+              "supplied_one_token_ms": 1.1299500001769047,
+              "state_bytes": 4608,
+              "rss_before_bytes": 305156096,
+              "rss_after_bytes": 305156096
+            }
+          ]
+        },
+        {
+          "length": 64,
+          "quality": {
+            "correct": 454,
+            "queries": 512,
+            "accuracy": 0.88671875
+          },
+          "constant_value64_baseline": {
+            "correct": 11,
+            "queries": 512,
+            "accuracy": 0.021484375
+          },
+          "controls": {
+            "full_vs_stream_max_abs": 5.245208740234375e-06,
+            "split_max_abs": 5.0067901611328125e-06,
+            "step_max_abs": 6.198883056640625e-06,
+            "reset_exact": true,
+            "batch_reorder_isolated": true,
+            "returned_state_bytes": 9216,
+            "state_offsets": [
+              64
+            ]
+          },
+          "timing": [
+            {
+              "repetition": 1,
+              "prefill_ms": 5.448999989312142,
+              "supplied_one_token_ms": 1.1277500016149133,
+              "state_bytes": 4608,
+              "rss_before_bytes": 324358144,
+              "rss_after_bytes": 324362240
+            },
+            {
+              "repetition": 2,
+              "prefill_ms": 5.177400016691536,
+              "supplied_one_token_ms": 1.1131749997730367,
+              "state_bytes": 4608,
+              "rss_before_bytes": 324362240,
+              "rss_after_bytes": 324366336
+            },
+            {
+              "repetition": 3,
+              "prefill_ms": 5.498400016222149,
+              "supplied_one_token_ms": 1.0928062511084136,
+              "state_bytes": 4608,
+              "rss_before_bytes": 324366336,
+              "rss_after_bytes": 324366336
+            }
+          ]
+        }
+      ],
+      "checkpoint": {
+        "file": "model-seed7-loops1.pt",
+        "sha256": "77e533f6b4fc064c23185e785560575a7748f71964a638806c7d07995dcdb2d5"
+      }
+    },
+    {
+      "seed": 7,
+      "loops": 2,
+      "training": {
+        "initial_parameter_sha256": "b928c7edfb16c4c20220b2736f6cf16f5ee7546523bf199e0a7998e1f662cda2",
+        "final_parameter_sha256": "b65f757bcc0ad30a5e362f6ec332046bab09d0fa78abccc1ac8781d9a1bbf9c7",
+        "unique_parameters": 28292,
+        "optimizer_steps": 384,
+        "train_seconds": 60.183233899995685,
+        "curve": [
+          {
+            "epoch": 1,
+            "loss": 4.57465198636055,
+            "last_batch_pre_clip_gradient_norm": 1.0730048418045044,
+            "validation": {
+              "correct": 5,
+              "queries": 256,
+              "accuracy": 0.01953125
+            }
+          },
+          {
+            "epoch": 2,
+            "loss": 4.179539054632187,
+            "last_batch_pre_clip_gradient_norm": 2.6767241954803467,
+            "validation": {
+              "correct": 14,
+              "queries": 256,
+              "accuracy": 0.0546875
+            }
+          },
+          {
+            "epoch": 3,
+            "loss": 3.7477222308516502,
+            "last_batch_pre_clip_gradient_norm": 1.8180656433105469,
+            "validation": {
+              "correct": 27,
+              "queries": 256,
+              "accuracy": 0.10546875
+            }
+          },
+          {
+            "epoch": 4,
+            "loss": 3.149865537881851,
+            "last_batch_pre_clip_gradient_norm": 1.9174143075942993,
+            "validation": {
+              "correct": 40,
+              "queries": 256,
+              "accuracy": 0.15625
+            }
+          },
+          {
+            "epoch": 5,
+            "loss": 2.568699985742569,
+            "last_batch_pre_clip_gradient_norm": 2.722238540649414,
+            "validation": {
+              "correct": 61,
+              "queries": 256,
+              "accuracy": 0.23828125
+            }
+          },
+          {
+            "epoch": 6,
+            "loss": 1.9551564157009125,
+            "last_batch_pre_clip_gradient_norm": 2.811269521713257,
+            "validation": {
+              "correct": 122,
+              "queries": 256,
+              "accuracy": 0.4765625
+            }
+          },
+          {
+            "epoch": 7,
+            "loss": 1.1851458195596933,
+            "last_batch_pre_clip_gradient_norm": 3.721803903579712,
+            "validation": {
+              "correct": 198,
+              "queries": 256,
+              "accuracy": 0.7734375
+            }
+          },
+          {
+            "epoch": 8,
+            "loss": 0.5917130475863814,
+            "last_batch_pre_clip_gradient_norm": 1.8299379348754883,
+            "validation": {
+              "correct": 234,
+              "queries": 256,
+              "accuracy": 0.9140625
+            }
+          },
+          {
+            "epoch": 9,
+            "loss": 0.240037702023983,
+            "last_batch_pre_clip_gradient_norm": 1.2209622859954834,
+            "validation": {
+              "correct": 241,
+              "queries": 256,
+              "accuracy": 0.94140625
+            }
+          },
+          {
+            "epoch": 10,
+            "loss": 0.09441320819314569,
+            "last_batch_pre_clip_gradient_norm": 0.37080249190330505,
+            "validation": {
+              "correct": 243,
+              "queries": 256,
+              "accuracy": 0.94921875
+            }
+          },
+          {
+            "epoch": 11,
+            "loss": 0.04039982857648283,
+            "last_batch_pre_clip_gradient_norm": 0.29675596952438354,
+            "validation": {
+              "correct": 244,
+              "queries": 256,
+              "accuracy": 0.953125
+            }
+          },
+          {
+            "epoch": 12,
+            "loss": 0.02179294842062518,
+            "last_batch_pre_clip_gradient_norm": 0.18121100962162018,
+            "validation": {
+              "correct": 244,
+              "queries": 256,
+              "accuracy": 0.953125
+            }
+          }
+        ],
+        "checkpoint_selection": "Fixed final epoch; validation is recorded but never selects an epoch/configuration."
+      },
+      "evaluations": [
+        {
+          "length": 16,
+          "quality": {
+            "correct": 500,
+            "queries": 512,
+            "accuracy": 0.9765625
+          },
+          "constant_value64_baseline": {
+            "correct": 5,
+            "queries": 512,
+            "accuracy": 0.009765625
+          },
+          "controls": {
+            "full_vs_stream_max_abs": 4.76837158203125e-06,
+            "split_max_abs": 4.76837158203125e-06,
+            "step_max_abs": 8.344650268554688e-06,
+            "reset_exact": true,
+            "batch_reorder_isolated": true,
+            "returned_state_bytes": 18432,
+            "state_offsets": [
+              16,
+              16
+            ]
+          },
+          "timing": [
+            {
+              "repetition": 1,
+              "prefill_ms": 6.3667999929748476,
+              "supplied_one_token_ms": 2.1641999992425554,
+              "state_bytes": 9216,
+              "rss_before_bytes": 310513664,
+              "rss_after_bytes": 310513664
+            },
+            {
+              "repetition": 2,
+              "prefill_ms": 4.282600013539195,
+              "supplied_one_token_ms": 2.1962249993521255,
+              "state_bytes": 9216,
+              "rss_before_bytes": 310513664,
+              "rss_after_bytes": 310513664
+            },
+            {
+              "repetition": 3,
+              "prefill_ms": 4.1096999775618315,
+              "supplied_one_token_ms": 2.4888250009098556,
+              "state_bytes": 9216,
+              "rss_before_bytes": 310513664,
+              "rss_after_bytes": 310513664
+            }
+          ]
+        },
+        {
+          "length": 32,
+          "quality": {
+            "correct": 499,
+            "queries": 512,
+            "accuracy": 0.974609375
+          },
+          "constant_value64_baseline": {
+            "correct": 7,
+            "queries": 512,
+            "accuracy": 0.013671875
+          },
+          "controls": {
+            "full_vs_stream_max_abs": 4.76837158203125e-06,
+            "split_max_abs": 4.76837158203125e-06,
+            "step_max_abs": 5.7220458984375e-06,
+            "reset_exact": true,
+            "batch_reorder_isolated": true,
+            "returned_state_bytes": 18432,
+            "state_offsets": [
+              32,
+              32
+            ]
+          },
+          "timing": [
+            {
+              "repetition": 1,
+              "prefill_ms": 6.601399974897504,
+              "supplied_one_token_ms": 2.187456251704134,
+              "state_bytes": 9216,
+              "rss_before_bytes": 315367424,
+              "rss_after_bytes": 315371520
+            },
+            {
+              "repetition": 2,
+              "prefill_ms": 6.412100046873093,
+              "supplied_one_token_ms": 2.211299997725291,
+              "state_bytes": 9216,
+              "rss_before_bytes": 315371520,
+              "rss_after_bytes": 315371520
+            },
+            {
+              "repetition": 3,
+              "prefill_ms": 6.69400003971532,
+              "supplied_one_token_ms": 2.1844187504029833,
+              "state_bytes": 9216,
+              "rss_before_bytes": 315371520,
+              "rss_after_bytes": 315371520
+            }
+          ]
+        },
+        {
+          "length": 64,
+          "quality": {
+            "correct": 497,
+            "queries": 512,
+            "accuracy": 0.970703125
+          },
+          "constant_value64_baseline": {
+            "correct": 11,
+            "queries": 512,
+            "accuracy": 0.021484375
+          },
+          "controls": {
+            "full_vs_stream_max_abs": 6.67572021484375e-06,
+            "split_max_abs": 6.079673767089844e-06,
+            "step_max_abs": 9.059906005859375e-06,
+            "reset_exact": true,
+            "batch_reorder_isolated": true,
+            "returned_state_bytes": 18432,
+            "state_offsets": [
+              64,
+              64
+            ]
+          },
+          "timing": [
+            {
+              "repetition": 1,
+              "prefill_ms": 11.089000036008656,
+              "supplied_one_token_ms": 2.4891562497941777,
+              "state_bytes": 9216,
+              "rss_before_bytes": 311742464,
+              "rss_after_bytes": 311742464
+            },
+            {
+              "repetition": 2,
+              "prefill_ms": 14.454099989961833,
+              "supplied_one_token_ms": 2.2692062484566122,
+              "state_bytes": 9216,
+              "rss_before_bytes": 311742464,
+              "rss_after_bytes": 311742464
+            },
+            {
+              "repetition": 3,
+              "prefill_ms": 11.862900049891323,
+              "supplied_one_token_ms": 2.1804749994771555,
+              "state_bytes": 9216,
+              "rss_before_bytes": 311742464,
+              "rss_after_bytes": 311742464
+            }
+          ]
+        }
+      ],
+      "checkpoint": {
+        "file": "model-seed7-loops2.pt",
+        "sha256": "e61caa5331fe058ae883f0a3bafb5d128ce8e7736ffd8025b65b0837989cdbb3"
+      }
+    },
+    {
+      "seed": 19,
+      "loops": 1,
+      "training": {
+        "initial_parameter_sha256": "4de7ecf30e518b790ba7f4c346ff4d61f3cd3d512366ea86c5f684d2a24d0fd1",
+        "final_parameter_sha256": "37bfa4a36e59ce9fe72cc7f5ab95e5de0ed0799bddb62eaa1f3cfd4492be0642",
+        "unique_parameters": 28292,
+        "optimizer_steps": 384,
+        "train_seconds": 30.018722900014836,
+        "curve": [
+          {
+            "epoch": 1,
+            "loss": 4.61682516336441,
+            "last_batch_pre_clip_gradient_norm": 0.8874979019165039,
+            "validation": {
+              "correct": 4,
+              "queries": 256,
+              "accuracy": 0.015625
+            }
+          },
+          {
+            "epoch": 2,
+            "loss": 4.087013103067875,
+            "last_batch_pre_clip_gradient_norm": 1.5624966621398926,
+            "validation": {
+              "correct": 19,
+              "queries": 256,
+              "accuracy": 0.07421875
+            }
+          },
+          {
+            "epoch": 3,
+            "loss": 3.498291105031967,
+            "last_batch_pre_clip_gradient_norm": 2.479851484298706,
+            "validation": {
+              "correct": 70,
+              "queries": 256,
+              "accuracy": 0.2734375
+            }
+          },
+          {
+            "epoch": 4,
+            "loss": 2.4455107636749744,
+            "last_batch_pre_clip_gradient_norm": 2.4198315143585205,
+            "validation": {
+              "correct": 147,
+              "queries": 256,
+              "accuracy": 0.57421875
+            }
+          },
+          {
+            "epoch": 5,
+            "loss": 1.4353423193097115,
+            "last_batch_pre_clip_gradient_norm": 2.8775241374969482,
+            "validation": {
+              "correct": 220,
+              "queries": 256,
+              "accuracy": 0.859375
+            }
+          },
+          {
+            "epoch": 6,
+            "loss": 0.5924900760874152,
+            "last_batch_pre_clip_gradient_norm": 1.5412888526916504,
+            "validation": {
+              "correct": 245,
+              "queries": 256,
+              "accuracy": 0.95703125
+            }
+          },
+          {
+            "epoch": 7,
+            "loss": 0.1628722744062543,
+            "last_batch_pre_clip_gradient_norm": 0.6397762894630432,
+            "validation": {
+              "correct": 252,
+              "queries": 256,
+              "accuracy": 0.984375
+            }
+          },
+          {
+            "epoch": 8,
+            "loss": 0.05319377069827169,
+            "last_batch_pre_clip_gradient_norm": 0.2647998332977295,
+            "validation": {
+              "correct": 251,
+              "queries": 256,
+              "accuracy": 0.98046875
+            }
+          },
+          {
+            "epoch": 9,
+            "loss": 0.024412258178927004,
+            "last_batch_pre_clip_gradient_norm": 0.11617283523082733,
+            "validation": {
+              "correct": 250,
+              "queries": 256,
+              "accuracy": 0.9765625
+            }
+          },
+          {
+            "epoch": 10,
+            "loss": 0.015492659964365885,
+            "last_batch_pre_clip_gradient_norm": 0.07660572230815887,
+            "validation": {
+              "correct": 250,
+              "queries": 256,
+              "accuracy": 0.9765625
+            }
+          },
+          {
+            "epoch": 11,
+            "loss": 0.011463997972896323,
+            "last_batch_pre_clip_gradient_norm": 0.04807968810200691,
+            "validation": {
+              "correct": 250,
+              "queries": 256,
+              "accuracy": 0.9765625
+            }
+          },
+          {
+            "epoch": 12,
+            "loss": 0.009004346647998318,
+            "last_batch_pre_clip_gradient_norm": 0.03685799986124039,
+            "validation": {
+              "correct": 250,
+              "queries": 256,
+              "accuracy": 0.9765625
+            }
+          }
+        ],
+        "checkpoint_selection": "Fixed final epoch; validation is recorded but never selects an epoch/configuration."
+      },
+      "evaluations": [
+        {
+          "length": 16,
+          "quality": {
+            "correct": 502,
+            "queries": 512,
+            "accuracy": 0.98046875
+          },
+          "constant_value64_baseline": {
+            "correct": 5,
+            "queries": 512,
+            "accuracy": 0.009765625
+          },
+          "controls": {
+            "full_vs_stream_max_abs": 3.6954879760742188e-06,
+            "split_max_abs": 4.082918167114258e-06,
+            "step_max_abs": 1.0609626770019531e-05,
+            "reset_exact": true,
+            "batch_reorder_isolated": true,
+            "returned_state_bytes": 9216,
+            "state_offsets": [
+              16
+            ]
+          },
+          "timing": [
+            {
+              "repetition": 1,
+              "prefill_ms": 2.06389999948442,
+              "supplied_one_token_ms": 1.2011812505079433,
+              "state_bytes": 4608,
+              "rss_before_bytes": 310812672,
+              "rss_after_bytes": 310824960
+            },
+            {
+              "repetition": 2,
+              "prefill_ms": 2.7894999948330224,
+              "supplied_one_token_ms": 1.3953750021755695,
+              "state_bytes": 4608,
+              "rss_before_bytes": 310824960,
+              "rss_after_bytes": 310824960
+            },
+            {
+              "repetition": 3,
+              "prefill_ms": 2.8523000073619187,
+              "supplied_one_token_ms": 1.4582625008188188,
+              "state_bytes": 4608,
+              "rss_before_bytes": 310824960,
+              "rss_after_bytes": 310824960
+            }
+          ]
+        },
+        {
+          "length": 32,
+          "quality": {
+            "correct": 506,
+            "queries": 512,
+            "accuracy": 0.98828125
+          },
+          "constant_value64_baseline": {
+            "correct": 7,
+            "queries": 512,
+            "accuracy": 0.013671875
+          },
+          "controls": {
+            "full_vs_stream_max_abs": 5.7220458984375e-06,
+            "split_max_abs": 3.814697265625e-06,
+            "step_max_abs": 5.4836273193359375e-06,
+            "reset_exact": true,
+            "batch_reorder_isolated": true,
+            "returned_state_bytes": 9216,
+            "state_offsets": [
+              32
+            ]
+          },
+          "timing": [
+            {
+              "repetition": 1,
+              "prefill_ms": 3.130399971269071,
+              "supplied_one_token_ms": 1.1794750025728717,
+              "state_bytes": 4608,
+              "rss_before_bytes": 315478016,
+              "rss_after_bytes": 315514880
+            },
+            {
+              "repetition": 2,
+              "prefill_ms": 4.752799984999001,
+              "supplied_one_token_ms": 1.1627312524069566,
+              "state_bytes": 4608,
+              "rss_before_bytes": 315514880,
+              "rss_after_bytes": 311222272
+            },
+            {
+              "repetition": 3,
+              "prefill_ms": 3.1424000044353306,
+              "supplied_one_token_ms": 1.113156249630265,
+              "state_bytes": 4608,
+              "rss_before_bytes": 311222272,
+              "rss_after_bytes": 311259136
+            }
+          ]
+        },
+        {
+          "length": 64,
+          "quality": {
+            "correct": 504,
+            "queries": 512,
+            "accuracy": 0.984375
+          },
+          "constant_value64_baseline": {
+            "correct": 11,
+            "queries": 512,
+            "accuracy": 0.021484375
+          },
+          "controls": {
+            "full_vs_stream_max_abs": 9.059906005859375e-06,
+            "split_max_abs": 9.775161743164062e-06,
+            "step_max_abs": 8.58306884765625e-06,
+            "reset_exact": true,
+            "batch_reorder_isolated": true,
+            "returned_state_bytes": 9216,
+            "state_offsets": [
+              64
+            ]
+          },
+          "timing": [
+            {
+              "repetition": 1,
+              "prefill_ms": 7.334700028877705,
+              "supplied_one_token_ms": 1.429737498256145,
+              "state_bytes": 4608,
+              "rss_before_bytes": 310956032,
+              "rss_after_bytes": 311013376
+            },
+            {
+              "repetition": 2,
+              "prefill_ms": 7.275399984791875,
+              "supplied_one_token_ms": 1.3149437509127893,
+              "state_bytes": 4608,
+              "rss_before_bytes": 311013376,
+              "rss_after_bytes": 311013376
+            },
+            {
+              "repetition": 3,
+              "prefill_ms": 5.106500000692904,
+              "supplied_one_token_ms": 1.4314062500488944,
+              "state_bytes": 4608,
+              "rss_before_bytes": 311013376,
+              "rss_after_bytes": 311013376
+            }
+          ]
+        }
+      ],
+      "checkpoint": {
+        "file": "model-seed19-loops1.pt",
+        "sha256": "f8f16ccc8908f129d90868a666f32bf1d072a3b673a1861537d48a546c5e786c"
+      }
+    },
+    {
+      "seed": 19,
+      "loops": 2,
+      "training": {
+        "initial_parameter_sha256": "4de7ecf30e518b790ba7f4c346ff4d61f3cd3d512366ea86c5f684d2a24d0fd1",
+        "final_parameter_sha256": "58be54acd2ac3c74cf3cc50b9b2d86d3e5db4cdefa628c76eb017544e08bce12",
+        "unique_parameters": 28292,
+        "optimizer_steps": 384,
+        "train_seconds": 61.42672029999085,
+        "curve": [
+          {
+            "epoch": 1,
+            "loss": 4.57505901157856,
+            "last_batch_pre_clip_gradient_norm": 0.9213076829910278,
+            "validation": {
+              "correct": 5,
+              "queries": 256,
+              "accuracy": 0.01953125
+            }
+          },
+          {
+            "epoch": 2,
+            "loss": 4.073881536722183,
+            "last_batch_pre_clip_gradient_norm": 1.9138052463531494,
+            "validation": {
+              "correct": 11,
+              "queries": 256,
+              "accuracy": 0.04296875
+            }
+          },
+          {
+            "epoch": 3,
+            "loss": 3.688989855349064,
+            "last_batch_pre_clip_gradient_norm": 2.1560888290405273,
+            "validation": {
+              "correct": 25,
+              "queries": 256,
+              "accuracy": 0.09765625
+            }
+          },
+          {
+            "epoch": 4,
+            "loss": 3.2273935228586197,
+            "last_batch_pre_clip_gradient_norm": 2.4473769664764404,
+            "validation": {
+              "correct": 51,
+              "queries": 256,
+              "accuracy": 0.19921875
+            }
+          },
+          {
+            "epoch": 5,
+            "loss": 2.5988262072205544,
+            "last_batch_pre_clip_gradient_norm": 2.64194917678833,
+            "validation": {
+              "correct": 93,
+              "queries": 256,
+              "accuracy": 0.36328125
+            }
+          },
+          {
+            "epoch": 6,
+            "loss": 1.8361734747886658,
+            "last_batch_pre_clip_gradient_norm": 3.3658463954925537,
+            "validation": {
+              "correct": 147,
+              "queries": 256,
+              "accuracy": 0.57421875
+            }
+          },
+          {
+            "epoch": 7,
+            "loss": 1.0732877980917692,
+            "last_batch_pre_clip_gradient_norm": 3.1978812217712402,
+            "validation": {
+              "correct": 203,
+              "queries": 256,
+              "accuracy": 0.79296875
+            }
+          },
+          {
+            "epoch": 8,
+            "loss": 0.4365125922486186,
+            "last_batch_pre_clip_gradient_norm": 2.299018383026123,
+            "validation": {
+              "correct": 232,
+              "queries": 256,
+              "accuracy": 0.90625
+            }
+          },
+          {
+            "epoch": 9,
+            "loss": 0.14503001072444022,
+            "last_batch_pre_clip_gradient_norm": 0.7822690606117249,
+            "validation": {
+              "correct": 249,
+              "queries": 256,
+              "accuracy": 0.97265625
+            }
+          },
+          {
+            "epoch": 10,
+            "loss": 0.054708353825844824,
+            "last_batch_pre_clip_gradient_norm": 0.2224673181772232,
+            "validation": {
+              "correct": 251,
+              "queries": 256,
+              "accuracy": 0.98046875
+            }
+          },
+          {
+            "epoch": 11,
+            "loss": 0.024141234520357102,
+            "last_batch_pre_clip_gradient_norm": 0.11555903404951096,
+            "validation": {
+              "correct": 250,
+              "queries": 256,
+              "accuracy": 0.9765625
+            }
+          },
+          {
+            "epoch": 12,
+            "loss": 0.013312290917383507,
+            "last_batch_pre_clip_gradient_norm": 0.06069175899028778,
+            "validation": {
+              "correct": 252,
+              "queries": 256,
+              "accuracy": 0.984375
+            }
+          }
+        ],
+        "checkpoint_selection": "Fixed final epoch; validation is recorded but never selects an epoch/configuration."
+      },
+      "evaluations": [
+        {
+          "length": 16,
+          "quality": {
+            "correct": 498,
+            "queries": 512,
+            "accuracy": 0.97265625
+          },
+          "constant_value64_baseline": {
+            "correct": 5,
+            "queries": 512,
+            "accuracy": 0.009765625
+          },
+          "controls": {
+            "full_vs_stream_max_abs": 4.76837158203125e-06,
+            "split_max_abs": 5.245208740234375e-06,
+            "step_max_abs": 5.7220458984375e-06,
+            "reset_exact": true,
+            "batch_reorder_isolated": true,
+            "returned_state_bytes": 18432,
+            "state_offsets": [
+              16,
+              16
+            ]
+          },
+          "timing": [
+            {
+              "repetition": 1,
+              "prefill_ms": 5.546200030948967,
+              "supplied_one_token_ms": 2.768862497759983,
+              "state_bytes": 9216,
+              "rss_before_bytes": 344551424,
+              "rss_after_bytes": 344354816
+            },
+            {
+              "repetition": 2,
+              "prefill_ms": 5.651699961163104,
+              "supplied_one_token_ms": 2.7242187497904524,
+              "state_bytes": 9216,
+              "rss_before_bytes": 344354816,
+              "rss_after_bytes": 344375296
+            },
+            {
+              "repetition": 3,
+              "prefill_ms": 5.5602999636903405,
+              "supplied_one_token_ms": 2.7444500010460615,
+              "state_bytes": 9216,
+              "rss_before_bytes": 344375296,
+              "rss_after_bytes": 344379392
+            }
+          ]
+        },
+        {
+          "length": 32,
+          "quality": {
+            "correct": 498,
+            "queries": 512,
+            "accuracy": 0.97265625
+          },
+          "constant_value64_baseline": {
+            "correct": 7,
+            "queries": 512,
+            "accuracy": 0.013671875
+          },
+          "controls": {
+            "full_vs_stream_max_abs": 5.7220458984375e-06,
+            "split_max_abs": 5.9604644775390625e-06,
+            "step_max_abs": 1.0013580322265625e-05,
+            "reset_exact": true,
+            "batch_reorder_isolated": true,
+            "returned_state_bytes": 18432,
+            "state_offsets": [
+              32,
+              32
+            ]
+          },
+          "timing": [
+            {
+              "repetition": 1,
+              "prefill_ms": 9.688000020105392,
+              "supplied_one_token_ms": 3.0460562484222464,
+              "state_bytes": 9216,
+              "rss_before_bytes": 316305408,
+              "rss_after_bytes": 316342272
+            },
+            {
+              "repetition": 2,
+              "prefill_ms": 8.545199991203845,
+              "supplied_one_token_ms": 2.614812499814434,
+              "state_bytes": 9216,
+              "rss_before_bytes": 316342272,
+              "rss_after_bytes": 315715584
+            },
+            {
+              "repetition": 3,
+              "prefill_ms": 9.192300029098988,
+              "supplied_one_token_ms": 2.92541250018985,
+              "state_bytes": 9216,
+              "rss_before_bytes": 315715584,
+              "rss_after_bytes": 315752448
+            }
+          ]
+        },
+        {
+          "length": 64,
+          "quality": {
+            "correct": 501,
+            "queries": 512,
+            "accuracy": 0.978515625
+          },
+          "constant_value64_baseline": {
+            "correct": 11,
+            "queries": 512,
+            "accuracy": 0.021484375
+          },
+          "controls": {
+            "full_vs_stream_max_abs": 1.1444091796875e-05,
+            "split_max_abs": 1.1444091796875e-05,
+            "step_max_abs": 1.430511474609375e-05,
+            "reset_exact": true,
+            "batch_reorder_isolated": true,
+            "returned_state_bytes": 18432,
+            "state_offsets": [
+              64,
+              64
+            ]
+          },
+          "timing": [
+            {
+              "repetition": 1,
+              "prefill_ms": 15.05749998614192,
+              "supplied_one_token_ms": 2.755031247943407,
+              "state_bytes": 9216,
+              "rss_before_bytes": 311189504,
+              "rss_after_bytes": 311189504
+            },
+            {
+              "repetition": 2,
+              "prefill_ms": 14.025399985257536,
+              "supplied_one_token_ms": 2.824937502737157,
+              "state_bytes": 9216,
+              "rss_before_bytes": 311189504,
+              "rss_after_bytes": 310730752
+            },
+            {
+              "repetition": 3,
+              "prefill_ms": 13.599400001112372,
+              "supplied_one_token_ms": 2.422637498966651,
+              "state_bytes": 9216,
+              "rss_before_bytes": 310730752,
+              "rss_after_bytes": 310792192
+            }
+          ]
+        }
+      ],
+      "checkpoint": {
+        "file": "model-seed19-loops2.pt",
+        "sha256": "7c36cef003e6cf3725bac4f1f3d60a71dbc759d914c967edb0b5c91c68a9260c"
+      }
+    }
+  ],
+  "protocol_sha256": "4167ddbc50fbf570b28e326110c2e549fef0e9031901eefe888791f340ab7255",
+  "data_manifest_sha256": "dfdb59b33643c2db776311f765f6ecc6c37ca27110af419c30a79287ce794dd0",
+  "source_identity_sha256": "cb1a6f66a05392d8cc179fec5a2ebc80625d4978ed6d77a91c121deea5ea40e2",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "cpu": "AMD64 Family 26 Model 96 Stepping 0, AuthenticAMD",
+    "logical_cpus": 16,
+    "total_memory_bytes": 31966941184,
+    "versions": {
+      "torch": "2.14.1+cpu",
+      "numpy": "2.5.4",
+      "einops": "0.8.1",
+      "psutil": "7.2.2"
+    }
+  },
+  "limits": [
+    "CPU float32 reference only; no fused GPU parity or pretrained language-model evaluation.",
+    "Synthetic MQAR with128 vocabulary items,2 pairs and zero distractors; not the full Zoology or GDN paper benchmark.",
+    "Shared-loop parameters match, but two loops use roughly twice the block work and twice the state; not compute-matched.",
+    "Timing is teacher-forced supplied token processing, not generated language tokens; before/after RSS is not a peak.",
+    "Fixed recurrent state excludes model weights, sequence activations, training graph, allocator and report data.",
+    "These seeded local runs do not establish generalization or statistically reliable superiority."
+  ]
+}

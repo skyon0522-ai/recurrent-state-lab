@@ -1,0 +1,47 @@
+[
+  {
+    "path": "LICENSE.md",
+    "revision": "1ad20d193b6113cae1e8f3c655c300d7b4b3f4bb",
+    "url": "https://raw.githubusercontent.com/HazyResearch/zoology/1ad20d193b6113cae1e8f3c655c300d7b4b3f4bb/LICENSE.md",
+    "bytes": 11346,
+    "sha256": "02a07d1c2d809a328ecb3cf23945ec5d2fa4e3c0120e24f365b4742aaa97c26b",
+    "package_path": "zoology/LICENSE.md",
+    "modification": "none; selected AST symbols loaded unchanged"
+  },
+  {
+    "path": "zoology/data/utils.py",
+    "revision": "1ad20d193b6113cae1e8f3c655c300d7b4b3f4bb",
+    "url": "https://raw.githubusercontent.com/HazyResearch/zoology/1ad20d193b6113cae1e8f3c655c300d7b4b3f4bb/zoology/data/utils.py",
+    "bytes": 7109,
+    "sha256": "872c9ab7f27958c53b4c1d244ba77ccffb06ce9f2fb737eb7650d321990704ae",
+    "package_path": "zoology/data/utils.py",
+    "modification": "none; selected AST symbols loaded unchanged"
+  },
+  {
+    "path": "zoology/data/multiquery_ar.py",
+    "revision": "1ad20d193b6113cae1e8f3c655c300d7b4b3f4bb",
+    "url": "https://raw.githubusercontent.com/HazyResearch/zoology/1ad20d193b6113cae1e8f3c655c300d7b4b3f4bb/zoology/data/multiquery_ar.py",
+    "bytes": 5983,
+    "sha256": "c53c345895a1c153df5461a5f4a812f507d4f7f3894b391028e3a467e3fe6bf3",
+    "package_path": "zoology/data/multiquery_ar.py",
+    "modification": "none; selected AST symbols loaded unchanged"
+  },
+  {
+    "path": "zoology/model.py",
+    "revision": "1ad20d193b6113cae1e8f3c655c300d7b4b3f4bb",
+    "url": "https://raw.githubusercontent.com/HazyResearch/zoology/1ad20d193b6113cae1e8f3c655c300d7b4b3f4bb/zoology/model.py",
+    "bytes": 14157,
+    "sha256": "69168e62fa6493d778146658ea5683fde62e82b0d0791169c716406463923fc9",
+    "package_path": "zoology/model.py",
+    "modification": "none; selected AST symbols loaded unchanged"
+  },
+  {
+    "path": "zoology/mixers/mlp.py",
+    "revision": "1ad20d193b6113cae1e8f3c655c300d7b4b3f4bb",
+    "url": "https://raw.githubusercontent.com/HazyResearch/zoology/1ad20d193b6113cae1e8f3c655c300d7b4b3f4bb/zoology/mixers/mlp.py",
+    "bytes": 1509,
+    "sha256": "3328e1aff3e4945f3ac3952fd9147c5871b4daedcdcba413e89c5f10e9edd351",
+    "package_path": "zoology/mixers/mlp.py",
+    "modification": "none; selected AST symbols loaded unchanged"
+  }
+]

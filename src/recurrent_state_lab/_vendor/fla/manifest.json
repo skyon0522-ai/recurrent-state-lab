@@ -1,0 +1,128 @@
+[
+  {
+    "package_path": "fla/ops/gated_delta_rule/naive.py",
+    "upstream_path": "fla/ops/gated_delta_rule/naive.py",
+    "revision": "1fe52b5d05c53601885610fab3d39157647d836d",
+    "url": "https://raw.githubusercontent.com/fla-org/flash-linear-attention/1fe52b5d05c53601885610fab3d39157647d836d/fla/ops/gated_delta_rule/naive.py",
+    "sha256": "d1cf17992349fd3e94af999b22e3d3a81be4a2d1881ce5b70a3457257166e0cb",
+    "bytes": 5290,
+    "selected_symbols": [
+      "naive_recurrent_gated_delta_rule",
+      "naive_chunk_gated_delta_rule"
+    ],
+    "readback_identical": true
+  },
+  {
+    "package_path": "fla/layers/gated_deltanet.py",
+    "upstream_path": "fla/layers/gated_deltanet.py",
+    "revision": "1fe52b5d05c53601885610fab3d39157647d836d",
+    "url": "https://raw.githubusercontent.com/fla-org/flash-linear-attention/1fe52b5d05c53601885610fab3d39157647d836d/fla/layers/gated_deltanet.py",
+    "sha256": "56922095476dd40b9874d1d9ee0a2e35558c7457c6d6e4e3dbbb8c68902c3b8b",
+    "bytes": 15882,
+    "selected_symbols": [
+      "GatedDeltaNet"
+    ],
+    "readback_identical": true
+  },
+  {
+    "package_path": "fla/modules/causal_conv1d/ops.py",
+    "upstream_path": "fla/modules/causal_conv1d/ops.py",
+    "revision": "1fe52b5d05c53601885610fab3d39157647d836d",
+    "url": "https://raw.githubusercontent.com/fla-org/flash-linear-attention/1fe52b5d05c53601885610fab3d39157647d836d/fla/modules/causal_conv1d/ops.py",
+    "sha256": "b649c59f257d2b4f9791aff2879a209ee56201b9a978c7d031e6f2cffa5c8719",
+    "bytes": 46153,
+    "selected_symbols": [
+      "ShortConvolution"
+    ],
+    "readback_identical": true
+  },
+  {
+    "package_path": "fla/modules/norm/layernorm.py",
+    "upstream_path": "fla/modules/norm/layernorm.py",
+    "revision": "1fe52b5d05c53601885610fab3d39157647d836d",
+    "url": "https://raw.githubusercontent.com/fla-org/flash-linear-attention/1fe52b5d05c53601885610fab3d39157647d836d/fla/modules/norm/layernorm.py",
+    "sha256": "525ec77fdd5fe108d1980d10e7a14d97be8090e159574ef389e186292abf48f5",
+    "bytes": 45201,
+    "selected_symbols": [
+      "rms_norm_ref",
+      "RMSNorm"
+    ],
+    "readback_identical": true
+  },
+  {
+    "package_path": "fla/modules/norm/layernorm_gated.py",
+    "upstream_path": "fla/modules/norm/layernorm_gated.py",
+    "revision": "1fe52b5d05c53601885610fab3d39157647d836d",
+    "url": "https://raw.githubusercontent.com/fla-org/flash-linear-attention/1fe52b5d05c53601885610fab3d39157647d836d/fla/modules/norm/layernorm_gated.py",
+    "sha256": "8d274350078af2b0c9817f963b7ab2ba5a6894ba9e08943c1600a67663c50f7e",
+    "bytes": 17882,
+    "selected_symbols": [
+      "rms_norm_ref"
+    ],
+    "readback_identical": true
+  },
+  {
+    "package_path": "fla/modules/norm/fused_norm_gate.py",
+    "upstream_path": "fla/modules/norm/fused_norm_gate.py",
+    "revision": "1fe52b5d05c53601885610fab3d39157647d836d",
+    "url": "https://raw.githubusercontent.com/fla-org/flash-linear-attention/1fe52b5d05c53601885610fab3d39157647d836d/fla/modules/norm/fused_norm_gate.py",
+    "sha256": "481d5f635ddda176c648fcd7f6625042d6c86662f1ee90b702366bf1a4079dfb",
+    "bytes": 38266,
+    "selected_symbols": [
+      "FusedRMSNormGated"
+    ],
+    "readback_identical": true
+  },
+  {
+    "package_path": "fla/ops/gated_delta_rule/gate.py",
+    "upstream_path": "fla/ops/gated_delta_rule/gate.py",
+    "revision": "1fe52b5d05c53601885610fab3d39157647d836d",
+    "url": "https://raw.githubusercontent.com/fla-org/flash-linear-attention/1fe52b5d05c53601885610fab3d39157647d836d/fla/ops/gated_delta_rule/gate.py",
+    "sha256": "0ca08c41206bbf14bae7f89f8705535443062a08a4755ca47befeedd10741aae",
+    "bytes": 9616,
+    "selected_symbols": [
+      "naive_gdn_gate"
+    ],
+    "readback_identical": true
+  },
+  {
+    "package_path": "fla/layers/utils.py",
+    "upstream_path": "fla/layers/utils.py",
+    "revision": "1fe52b5d05c53601885610fab3d39157647d836d",
+    "url": "https://raw.githubusercontent.com/fla-org/flash-linear-attention/1fe52b5d05c53601885610fab3d39157647d836d/fla/layers/utils.py",
+    "sha256": "99936599a5055da5473d3da52666c69f7c417188ca1a2648edb1d24f48398653",
+    "bytes": 12410,
+    "selected_symbols": [
+      "require_cache_layer_idx",
+      "get_layer_cache",
+      "update_layer_cache",
+      "unpad_hidden_states",
+      "repad_hidden_states"
+    ],
+    "readback_identical": true
+  },
+  {
+    "package_path": "fla/tests/modules/test_conv.py",
+    "upstream_path": "tests/modules/test_conv.py",
+    "revision": "1fe52b5d05c53601885610fab3d39157647d836d",
+    "url": "https://raw.githubusercontent.com/fla-org/flash-linear-attention/1fe52b5d05c53601885610fab3d39157647d836d/tests/modules/test_conv.py",
+    "sha256": "4c33d0c22d4a1487098d0b69010a44e7522ad54bd3dbab7e4b6cee333df66af2",
+    "bytes": 48684,
+    "selected_symbols": [
+      "_conv_ref_compute_dtype",
+      "causal_conv1d_ref",
+      "causal_conv1d_update_ref"
+    ],
+    "readback_identical": true
+  },
+  {
+    "package_path": "fla/LICENSE",
+    "upstream_path": "LICENSE",
+    "revision": "1fe52b5d05c53601885610fab3d39157647d836d",
+    "url": "https://raw.githubusercontent.com/fla-org/flash-linear-attention/1fe52b5d05c53601885610fab3d39157647d836d/LICENSE",
+    "sha256": "41a83c8187efc1e3ccc21909e806a9e52338e69448554d9754706c3d1cd610e7",
+    "bytes": 1096,
+    "selected_symbols": [],
+    "readback_identical": true
+  }
+]

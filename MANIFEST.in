@@ -1,0 +1,9 @@
+include README.md LICENSE NOTICE requirements-verified.txt
+recursive-include docs *.md *.html *.json *.png
+recursive-include tests *.py
+recursive-include .github *.yml
+recursive-include src/recurrent_state_lab/_vendor *.py *.json LICENSE LICENSE.md
+prune runs
+prune .venv
+prune build
+global-exclude *.pyc __pycache__ .pytest_cache
